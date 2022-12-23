@@ -13,8 +13,8 @@ namespace ViewModel.Logic
     {
         public override void Load()
         {
-            Bind<IRepository<Student>>().To<EntityRepository<Student>>().InSingletonScope();
-            //Bind<IRepository<Student>>().To<DapperRepository<Student>>().InSingletonScope();
+            //Bind<IRepository<Student>>().To<EntityRepository<Student>>().InSingletonScope();
+            Bind<IRepository<Student>>().To<DapperRepository<Student>>().InSingletonScope();
         }
     }
 }
